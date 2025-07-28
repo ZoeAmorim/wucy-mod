@@ -40,17 +40,14 @@ AddMinimapAtlas("images/map_icons/wucy.xml")
 local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
 
--- The character select screen lines
-STRINGS.CHARACTER_TITLES.wucy = "The Sample Character"
-STRINGS.CHARACTER_NAMES.wucy = "Esc"
+STRINGS.CHARACTER_TITLES.wucy = "The Wild Tomboy"
+STRINGS.CHARACTER_NAMES.wucy = "Wucy"
 STRINGS.CHARACTER_DESCRIPTIONS.wucy = "*Top of the food chain\n*Eats lots\n*Runs Fast"
 STRINGS.CHARACTER_QUOTES.wucy = "\"You look tasty\""
-STRINGS.CHARACTER_SURVIVABILITY.wucy = "50% either she dies or she lives."
+STRINGS.CHARACTER_SURVIVABILITY.wucy = "50% either she dies or lives."
 
--- Custom speech strings
 STRINGS.CHARACTERS.WUCY = require "speech_wucy"
 
--- The character's name as appears in-game 
 STRINGS.NAMES.WUCY = "Wucy"
 STRINGS.SKIN_NAMES.wucy_none = "Wucy"
 
@@ -66,5 +63,4 @@ local skin_modes = {
     },
 }
 
--- Add mod character to mod character list. Also specify a gender. Possible genders are MALE, FEMALE, ROBOT, NEUTRAL, and PLURAL.
-AddModCharacter("wucy", "FEMALE", skin_modes)
+AddModCharacter("wucy", "NEUTRAL", skin_modes)
