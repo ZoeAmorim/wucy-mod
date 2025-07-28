@@ -6,15 +6,12 @@ local assets = {
 
 -- Your character's stats
 TUNING.WUCY_HEALTH = 150
-TUNING.WUCY_HUNGER = 150
-TUNING.WUCY_SANITY = 200
+TUNING.WUCY_HUNGER = 200
+TUNING.WUCY_SANITY = 120
 
 -- Custom starting inventory
 TUNING.GAMEMODE_STARTING_ITEMS.DEFAULT.WUCY = {
-	"flint",
-	"flint",
-	"twigs",
-	"twigs",
+	"cookedmeat",
 }
 
 local start_inv = {}
@@ -26,7 +23,7 @@ local prefabs = FlattenTree(start_inv, true)
 -- When the character is revived from human
 local function onbecamehuman(inst)
 	-- Set speed when not a ghost (optional)
-	inst.components.locomotor:SetExternalSpeedMultiplier(inst, "wucy_speed_mod", 1)
+	inst.components.locomotor:SetExternalSpeedMultiplier(inst, "wucy_speed_mod", TUNING.WUCY_SPEED)
 end
 
 local function onbecameghost(inst)
@@ -70,10 +67,10 @@ local master_postinit = function(inst)
 	inst.components.sanity:SetMax(TUNING.WUCY_SANITY)
 	
 	-- Damage multiplier (optional)
-    inst.components.combat.damagemultiplier = 1
+    inst.components.combat.damagemultiplier = 1.2
 	
 	-- Hunger rate (optional)
-	inst.components.hunger.hungerrate = 1 * TUNING.WILSON_HUNGER_RATE
+	inst.components.hunger.hungerrate = 1.2 * TUNING.WILSON_HUNGER_RATE
 	
 	inst.OnLoad = onload
     inst.OnNewSpawn = onload

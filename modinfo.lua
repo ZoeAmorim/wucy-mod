@@ -18,6 +18,20 @@ icon = "modicon.tex"
 
 server_filter_tags = {
 "character",
+"tomboy",
 }
 
---configuration_options = {}
+configuration_options = {
+  {
+    name = "wucy_speed",
+    label = "Speed",
+    options = {
+      { description = "1.0", data = 1.0 },
+      { description = "1.2", data = 1.2 },
+      { description = "1.4", data = 1.4 },
+      { description = "1.6", data = 1.6 },
+      { description = "1.8", data = 1.8 },
+    },
+    default = 1.2,
+  },
+}

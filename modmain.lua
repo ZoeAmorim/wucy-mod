@@ -64,3 +64,11 @@ local skin_modes = {
 }
 
 AddModCharacter("wucy", "NEUTRAL", skin_modes)
+
+------------------------------------------------------------------------------
+
+--		SETTING VARIABLES FOR THE CHARACTER
+
+------------------------------------------------------------------------------
+
+TUNING.WUCY_SPEED = GetModConfigData("wucy_speed")
