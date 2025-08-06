@@ -42,7 +42,7 @@ local STRINGS = GLOBAL.STRINGS
 
 STRINGS.CHARACTER_TITLES.wucy = "The Wild Tomboy"
 STRINGS.CHARACTER_NAMES.wucy = "Wucy"
-STRINGS.CHARACTER_DESCRIPTIONS.wucy = "*Top of the food chain\n*Eats lots\n*Runs Fast"
+STRINGS.CHARACTER_DESCRIPTIONS.wucy = "*Top of the food chain\n*Eats lots\n*Dashes into danger"
 STRINGS.CHARACTER_QUOTES.wucy = "\"You look tasty\""
 STRINGS.CHARACTER_SURVIVABILITY.wucy = "50% either she dies or lives."
 
